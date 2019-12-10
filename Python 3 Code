@@ -1,0 +1,44 @@
+#
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+import scipy
+
+df = pd.read_csv('assignment.csv')     # dataframe df
+
+#Question 1
+
+a=df['Grid status']
+b=df['SOC']
+
+plt.figure(figsize=(7,7))
+plt.scatter(a,b)  
+plt.xlabel('Grid status')
+plt.ylabel('State of Charge (SOC)') 
+
+plt.show()
+
+
+# Question 2
+
+x=df['Equivalent cycle']
+y=df['SOH']
+plt.figure(figsize=(7,5))
+plt.scatter(x, y)
+plt.xlabel('Equivalent cycle')
+plt.ylabel('State of Health (SOH)') 
+
+plt.show()
+
+
+# Question 3
+
+a=df['Temperature']          
+b=df['SOC']
+plt.figure(figsize=(7,5))
+plt.plot(x,y)
+plt.xlabel('Temperature')
+plt.ylabel('State of Charge (SOC)') 
+
+plt.show()
