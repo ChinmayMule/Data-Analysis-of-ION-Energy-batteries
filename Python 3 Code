@@ -7,7 +7,7 @@ import scipy
 
 df = pd.read_csv('assignment.csv')     # dataframe df
 
-#Question 1
+# Code 1 - Pair between Grid Status and SoC.
 
 a=df['Grid status']
 b=df['SOC']
@@ -20,7 +20,8 @@ plt.ylabel('State of Charge (SOC)')
 plt.show()
 
 
-# Question 2
+
+# Code 2 - Pair 2 Equivalent cycles and SoH.
 
 x=df['Equivalent cycle']
 y=df['SOH']
@@ -32,7 +33,8 @@ plt.ylabel('State of Health (SOH)')
 plt.show()
 
 
-# Question 3
+
+# Code 3 - Pair 3 SoC and Temperature
 
 a=df['Temperature']          
 b=df['SOC']
